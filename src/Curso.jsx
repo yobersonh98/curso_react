@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 
 
 const Curso = ({title,image,price,profesor}) => (
@@ -13,10 +13,24 @@ const Curso = ({title,image,price,profesor}) => (
                     {`Prof.: ${profesor}`}
                 </div>
                 <div className="s-main-center">
-                    <a className="button--ghost-alert button--tiny" href="https://ed.team"> {`$ ${price} `} </a>
+                    <a className="button--ghost-alert button--tiny" href="https://ed.team"> {`$ ${price} USD`} </a>
                 </div>
             </div>
         </article>
 )
+
+Curso.propTypes = {
+    title : PropTypes.string,
+    image : PropTypes.string,
+    price : PropTypes.number,
+    profesor : PropTypes.string
+}
+
+Curso.defaultProps = {
+    title : "No se encontró título",
+    image : "https://images.unsplash.com/photo-1561997968-aa846c2bf255?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    price : "--",
+    profesor : ""
+}
 
 export default Curso 

@@ -19,17 +19,7 @@ const App = () => (
   </div>
 
   <div className="ed-grid m-grid-3">
-    <Curso 
-      title="React desde cero con EDteam"
-      image="https://edteam-media.s3.amazonaws.com/courses/original/5eaaec0b-fa78-4f48-94b6-61b757e1f5fa.png"
-      price="20 USD"
-      profesor="Yoberson Hernández"
-    />
-    <Curso 
-      title="HTML desde cero"
-      image="https://edteam-media.s3.amazonaws.com/courses/original/f1fa315c-d94a-4fba-b408-cc852a2f4e41.jpg"
-      price="0 USD"
-      profesor="Alvaro Felipe"
+    <Curso title="React desde cero" price= {20}
     />
   </div>
 </>
