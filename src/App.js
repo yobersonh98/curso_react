@@ -20,14 +20,6 @@ const App = () => (
 
   <div className="ed-grid m-grid-3">
     <Curso />
-    <Curso />
-    <Curso />
-    <Curso />
-    <Curso />
-    <Curso />
-    <Curso />
-    <Curso />
-    <Curso />
   </div>
 </>
 )
