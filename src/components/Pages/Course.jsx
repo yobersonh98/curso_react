@@ -35,8 +35,7 @@ const cursos = [
 const Course = ({ match }) => {
 
     const cursoActual = cursos.filter( c => c.id === parseInt(match.params.id)) [0]
-
-
+    
     return (
         <div className="ed-grid m-grid-3">
             {
