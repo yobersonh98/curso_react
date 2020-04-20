@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const MainMenu = () => (
     <header className="main-header">
@@ -15,6 +15,7 @@ const MainMenu = () => (
                         <li><NavLink exact to="/">Inicio</NavLink></li>
                         <li><NavLink to="/cursos">Cursos</NavLink></li>
                         <li><NavLink to="/formulario">Formulario</NavLink></li>
+                        <li><NavLink to="/usuarios">Usuarios</NavLink></li>
                     </ul>
                 </nav>
                 <div className="main-menu-toggle to-l" id="main-menu-toggle"></div>
