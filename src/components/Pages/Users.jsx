@@ -21,16 +21,6 @@ class Users extends Component {
         })
     }
 
-    /* componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users', {method: 'GET'})
-        .then( response => response.json())
-        .then( response2 => {
-            this.setState({
-                users : response2
-            })
-        })
-    } */
-
     render() {
 
         const { users } = this.state 
